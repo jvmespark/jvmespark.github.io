@@ -6,13 +6,7 @@ function NavDisplay() {
   return (
     <>
       <div className="display">
-        {"@"}<br></br>
-        {"@"}<br></br>
-        {"@"}<br></br>
-        {location}<br></br>
-        {"@"}<br></br>
-        {"@"}<br></br>
-        {"@"}<br></br>
+        <h3>{location}</h3>
       </div>
     </>
   )
