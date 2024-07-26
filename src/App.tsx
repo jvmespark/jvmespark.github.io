@@ -1,6 +1,7 @@
 import './App.css'
 
 import Nav from './components/nav'
+import About from './components/about'
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
       <div>
         <div className="blogContainer">
           <Nav></Nav>
-          <div>
-            content
-          </div>
+          <About></About>
         </div>
       </div>
     </>
