@@ -8,10 +8,10 @@ function NavDir() {
             <div className="inner">
                 <ul className="navbar-list">
                     <li>
-                        <a href={"about"}>{"about"}</a>
-                        <a href={"writings"}>{"writings"}</a>
-                        <a href={"projects"}>{"projects"}</a>
-                        <a href={"misc"}>{"misc"}</a>
+                        <a href="#/about">{"about"}</a>
+                        <a href={"#/writings"}>{"writings"}</a>
+                        <a href={"#/projects"}>{"projects"}</a>
+                        <a href={"#/misc"}>{"misc"}</a>
                     </li>
                 </ul>
             </div>

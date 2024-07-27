@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../../assets/about.gif");
+    background-image: url("../assets/about.gif");
     background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
     background-size: cover;
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../../assets/writings.gif");
+    background-image: url("../assets/writings.gif");
     background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
     background-size: cover;
@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../../assets/ed.gif");
+    background-image: url("../assets/ed.gif");
     background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
     background-size: cover;
@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../../assets/misc.gif");
+    background-image: url("../assets/misc.gif");
     background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
     background-size: cover;
