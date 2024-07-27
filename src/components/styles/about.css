@@ -13,8 +13,6 @@
 }
 .profile_inner {
   display: flex;
-  
-  padding-bottom: 15%;
 }
 .profile_inner img {
     height: 200px;

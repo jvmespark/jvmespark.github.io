@@ -13,3 +13,7 @@
       width:100%;
    }
 }
+
+.profile_text a:link, .profile_text a:visited {
+    color: purple;
+}

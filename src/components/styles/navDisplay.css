@@ -1,14 +1,60 @@
 
-.display {
+.displayAbout {
     width: 100%;
     height: 100%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../../assets/art.gif");
-    background-color: rgba(255,255,255,0.6);
+    background-image: url("../../assets/about.gif");
+    background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
     background-size: cover;
+    background-position: 20% 18%;
+}
+
+.displayWritings {
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/writings.gif");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: 20% 50%;
+}
+
+.displayProjects {
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/ed.gif");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: 20% 50%;
+}
+
+.displayMisc {
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/misc.gif");
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: 20% 43%;
 }
