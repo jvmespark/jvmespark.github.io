@@ -4,7 +4,7 @@ function Misc() {
   return (
     <>
     <div>
-        misc
+        miscellaneous
     </div>
     </>
   )

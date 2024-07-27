@@ -12,7 +12,7 @@ function MiscPage() {
                 <div className="navdir"><NavDir></NavDir></div>
                 <div className="navdisplay">
                     <div className="displayMisc">
-                    <h3>misc</h3>
+                    <h3>miscellaneous</h3>
                     </div>
                 </div>
             </div>

@@ -55,3 +55,15 @@ nav {
 .navbar-list a {
 display: inline-flex;
 }
+
+@media screen and (max-width: 600px) {
+    .navbar-list a {
+        font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .navbar-list a {
+        font-size: 13px;
+    }
+  }

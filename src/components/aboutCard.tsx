@@ -12,7 +12,7 @@ function AboutCard() {
                     <br></br><br></br>
 
                     <li>{"Currently working on AI hardware accelerators as a SWE Intern at "}
-                    <a href={"https://community.amd.com/t5/blogs/ct-p/amd-blogs"}>{"AMD"}</a></li>
+                    <a href={"https://www.youtube.com/user/AMD"}>{"AMD"}</a></li>
                     
                     <li>{"Previously with the Digital Payments & Innovation team at "}
                     <a href={"https://www.linkedin.com/feed/update/urn:li:activity:7204642495563976705/"}>{"Capital One"}</a></li>
@@ -27,6 +27,7 @@ function AboutCard() {
                 <a href={"https://github.com/jvmespark"}>{"github"}</a>&nbsp;&nbsp;
                 <a href={"https://www.linkedin.com/in/jvmespark/"}>{"linkedin"}</a>&nbsp;&nbsp;
                 <a href={"https://www.youtube.com/@loomydev"}>{"youtube"}</a>&nbsp;&nbsp;
+                <a href={"https://www.instagram.com/jvmespark"}>{"instagram"}</a>&nbsp;&nbsp;
                 <a href={"mailto:jamesdpark1@gmail.com"}>{"email"}</a>&nbsp;&nbsp;
             </div>
         </div>

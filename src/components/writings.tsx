@@ -1,12 +1,12 @@
-import './styles/about.css'
+import './styles/writings.css'
 
 function Writings() {
   return (
-    <>
-    <div>
-        writings
+    <div className="writingNavContainer">
+        <button>devlogs</button>
+        <button>essays</button>
+        <button>college</button>
     </div>
-    </>
   )
 }
 

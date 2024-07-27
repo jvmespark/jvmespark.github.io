@@ -12,6 +12,7 @@
     background-blend-mode: lighten;
     background-size: cover;
     background-position: 20% 18%;
+    user-select: none;
 }
 
 .displayWritings {
@@ -27,6 +28,7 @@
     background-blend-mode: lighten;
     background-size: cover;
     background-position: 20% 50%;
+    user-select: none;
 }
 
 .displayProjects {
@@ -42,6 +44,7 @@
     background-blend-mode: lighten;
     background-size: cover;
     background-position: 20% 50%;
+    user-select: none;
 }
 
 .displayMisc {
@@ -57,4 +60,5 @@
     background-blend-mode: lighten;
     background-size: cover;
     background-position: 20% 43%;
+    user-select: none;
 }

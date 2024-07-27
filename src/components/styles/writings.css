@@ -1,0 +1,26 @@
+
+.writingNavContainer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+button {
+    width: 15%;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    margin-left: 2%;
+    padding: 1% 1% 1%;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    user-select: none;
+}
+
+/* Add a dark background color to the active button */
+button:active {
+    background-color: #000;
+    color: white;
+}
