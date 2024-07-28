@@ -4,6 +4,8 @@ import AboutPage from './routes/aboutPage'
 import MiscPage from './routes/miscPage'
 import ProjectsPage from './routes/projectsPage'
 import WritingsPage from './routes/writingsPage'
+import PostPage from './routes/postPage'
+
 import './index.css'
 import {
   createHashRouter,
@@ -30,6 +32,10 @@ const router = createHashRouter([
   {
     path: "/misc",
     element: <MiscPage />,
+  },
+  {
+    path: "/writings/:writingsid",
+    element: <PostPage />,
   },
 ]);
 

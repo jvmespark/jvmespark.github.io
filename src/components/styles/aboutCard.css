@@ -17,3 +17,15 @@
 .profile_text a:link, .profile_text a:visited {
     color: purple;
 }
+
+@media only screen and (max-width:840px) {
+    .center {
+        text-align: center;
+    }
+    li {
+        margin-bottom: 1%;
+    }
+    .contacts {
+        text-align: center;
+    }
+}

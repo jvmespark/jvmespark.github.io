@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+.seperator {
+    margin-top: 3%;
+    height: 2px;
+    background-color: darkslategray;
+}
 
 .profile {
     position: relative;
@@ -21,11 +26,13 @@
     padding: 20px;
 }
 
-/* 768px */
-@media only screen and (max-width:48em) {
+@media only screen and (max-width:840px) {
    .profile_inner { 
       display:table;
       width:100%;
    }
-   .profile_img { display:table-caption; }
+   .profile_img {
+        display:table-caption;
+        text-align: center;
+    }
 }

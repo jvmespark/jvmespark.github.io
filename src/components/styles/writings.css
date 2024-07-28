@@ -26,6 +26,10 @@ button.toggled {
     color: white;
 }
 
+.postContainer {
+    
+}
+
 @media screen and (max-width: 700px) {
     button {
         width: 20%;

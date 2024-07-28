@@ -12,17 +12,22 @@ function Writings() {
     if (type == "college") setCollege(!college)
   };
   return (
+    <>
     <div className="writingNavContainer">
-        <button className={devlogs ? 'toggled' : ''} onClick={() => handleToggle("devlogs")}>
-          devlogs
-        </button>
         <button className={essays ? 'toggled' : ''} onClick={() => handleToggle("essays")}>
           essays
+        </button>
+        <button className={devlogs ? 'toggled' : ''} onClick={() => handleToggle("devlogs")}>
+          devlogs
         </button>
         <button className={college ? 'toggled' : ''} onClick={() => handleToggle("college")}>
           college
         </button>
     </div>
+    <div className="postContainer">
+      <a href={"#/writings/1"}>{"post"}</a>
+    </div>
+    </>
   )
 }
 
