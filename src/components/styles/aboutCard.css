@@ -4,14 +4,7 @@
     word-wrap: break-word;
     white-space: pre-wrap;
     word-break: break-word;
-}
-
-/* 768px */
-@media only screen and (max-width:48em) {
-   .profile_text {
-      display:block;
-      width:100%;
-   }
+    width: 100%;
 }
 
 .profile_text a:link, .profile_text a:visited {
@@ -29,3 +22,11 @@
         text-align: center;
     }
 }
+
+
+@media only screen and (max-width:770px) {
+    .profile_text {
+       display:block;
+       width:100%;
+    }
+ }

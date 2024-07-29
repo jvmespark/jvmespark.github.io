@@ -64,15 +64,15 @@ function Writings() {
                     <button key={post.filename}>
                         <h3>{post.filename}</h3>
                         {post.subtitle && <p>{post.subtitle}</p>}
+                        {/*
                         {post.tags && (
-                            <div>
-                              {/* 
+                            <div> 
                             {post.tags.map((tag, index) => (
                                 <span key={index} className="tag">{tag+" "}</span>
                             ))}
-                                */}
                             </div>
                         )}
+                        */}
                     </button>
                   </a>
               </div>

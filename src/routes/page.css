@@ -18,6 +18,12 @@
     align-items: center;
   }
 
+  .post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
   .post h1, .post h2, .post h3, .post h4 {
     text-align: center;
   }
