@@ -25,7 +25,7 @@ function Writings() {
         </button>
     </div>
     <div className="postContainer">
-      <a href={"#/writings/1"}>{"post"}</a>
+      <a href={"#/writings/Post"}>{"Post"}</a>
     </div>
     </>
   )
