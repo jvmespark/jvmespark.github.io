@@ -1,0 +1,17 @@
+{
+    "files": [
+      {
+        "filename": "Post",
+        "title": "Post 1",
+        "subtitle": "Subtitle for Post 1",
+        "tags": ["devlogs"]
+      },
+      {
+        "filename": "asd",
+        "title": "Post 2",
+        "subtitle": "Subtitle for Post 2",
+        "tags": ["college"]
+      }
+    ]
+  }
+  
