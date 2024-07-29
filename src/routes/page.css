@@ -17,6 +17,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .post h1, .post h2, .post h3, .post h4 {
+    text-align: center;
+  }
   
   @media screen and (max-width: 600px) {
     .blogContainer {

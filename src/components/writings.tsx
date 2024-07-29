@@ -1,9 +1,9 @@
 import './styles/writings.css'
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 function Writings() {
   const [posts, setPosts] = useState<{ filename: string; title?: string; subtitle?: string; tags?: string[] }[]>([]);
+  const [filteredPost, setFilteredPost] = useState<{ filename: string; title?: string; subtitle?: string; tags?: string[] }[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -14,6 +14,7 @@ function Writings() {
         }
         const data = await response.json();
         setPosts(data.files);
+        setFilteredPost(data.files);
       } catch (error) {
         console.error(error);
       }
@@ -31,10 +32,16 @@ function Writings() {
     if (type == "devlogs") setDevlogs(!devlogs)
     if (type == "essays") setEssays(!essays)
     if (type == "college") setCollege(!college)
-    if (!devlogs && !essays && !college) setTag(type)
-    else setTag("")
+    if (!devlogs && !essays && !college) {
+      const filteredItems = posts.filter(item => item.tags?.includes(type));
+      setFilteredPost(filteredItems);
+      setTag(type);
+    }
+    else {
+      setFilteredPost(posts);
+      setTag("")
+    }
   };
-  console.log("tag: ",tag)
 
   return (
     <>
@@ -49,36 +56,28 @@ function Writings() {
           college
         </button>
     </div>
+
     <div className="postContainer">
-      
-      
-      <div>
-        <ul>
-          {posts.map((post) => (
-              <div>
-                  {((post.tags && post.tags.includes(tag)) || tag=="") && (
-                  <li key={post.filename}>
-                      <Link to={`/writings/${post.filename}`}>
-                      <h3>{post.title}</h3>
-                      {post.subtitle && <h4>{post.subtitle}</h4>}
-                      {post.tags && (
-                          <div>
-                            {/* 
-                          {post.tags.map((tag, index) => (
-                              <span key={index} className="tag">{tag+" "}</span>
-                          ))}
-                              */}
-                          </div>
-                      )}
-                      </Link>
-                  </li>
-                  )}
+          {filteredPost.map((post) => (
+              <div className="post">
+                  <a href={`#/writings/${post.filename}`}>
+                    <button key={post.filename}>
+                        <h3>{post.filename}</h3>
+                        {post.subtitle && <p>{post.subtitle}</p>}
+                        {post.tags && (
+                            <div>
+                              {/* 
+                            {post.tags.map((tag, index) => (
+                                <span key={index} className="tag">{tag+" "}</span>
+                            ))}
+                                */}
+                            </div>
+                        )}
+                    </button>
+                  </a>
               </div>
           ))}
-        </ul>
       </div>
-
-    </div>
     </>
   )
 }

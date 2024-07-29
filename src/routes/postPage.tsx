@@ -11,14 +11,14 @@ const PostPage: React.FC = () => {
     let file = "/posts/"+writingsid+".md"
     return (
         <>
-            <div>
             <div className="blogContainer">
                 <div className="nav">
                     <div className="navdir"><NavDir></NavDir></div>
                     <div className="navdisplay"></div>
                 </div>
-                <MarkdownRenderer filePath={file} />
-            </div>
+                <div className="post">
+                    <MarkdownRenderer filePath={file} />
+                </div>
             </div>
         </>
     );
