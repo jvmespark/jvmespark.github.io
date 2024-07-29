@@ -5,6 +5,7 @@ import MiscPage from './routes/miscPage'
 import ProjectsPage from './routes/projectsPage'
 import WritingsPage from './routes/writingsPage'
 import PostPage from './routes/postPage'
+import ErrorPage from "./error-page";
 
 import './index.css'
 import {
@@ -16,6 +17,7 @@ const router = createHashRouter([
   {
     path: "/",
     element: <AboutPage></AboutPage>,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/about",

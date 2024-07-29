@@ -10,7 +10,6 @@ function NavDir() {
                     <li>
                         <a href="#/about">{"about"}</a>
                         <a href={"#/writings"}>{"writings"}</a>
-                        <a href={"#/misc"}>{"misc"}</a>
                     </li>
                 </ul>
             </div>

@@ -2,7 +2,6 @@ import './styles/misc.css'
 
 function Misc() {
   return (
-    <>
     <div className="link-container">
 
       <div className="section">
@@ -47,7 +46,6 @@ function Misc() {
         <a href="#/misc/">album</a><br></br>
       </div>
     </div>
-    </>
   )
 }
 
