@@ -12,7 +12,7 @@ function WritingsPage() {
                 <div className="navdir"><NavDir></NavDir></div>
                 <div className="navdisplay">
                     <div className="displayWritings">
-                    <h3>writings</h3>
+                    <h2>Writings</h2>
                     </div>
                 </div>
             </div>

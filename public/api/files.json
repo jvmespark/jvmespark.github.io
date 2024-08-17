@@ -1,20 +1,4 @@
 {
-    "files": [
-      {
-        "filename": "an interns guide to DC",
-        "subtitle": "musings from my time at Capital One",
-        "tags": ["devlogs"]
-      },
-      {
-        "filename": "thoughts on RPI (so far)",
-        "subtitle": "a second year's reflection",
-        "tags": ["college"]
-      },
-      {
-        "filename": "advice for cs students",
-        "subtitle": "Subtitle for Post 2",
-        "tags": ["college"]
-      }
-    ]
-  }
-  
+  "files": [
+  ]
+}

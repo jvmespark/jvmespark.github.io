@@ -1,7 +1,53 @@
 :root {
-  background-color: darkgray;
+  
+}
+
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+br
+{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+:root {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 ::selection {
   background: #FFFCA3;
+}
+
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+:root {
+  animation: fadeInAnimation_soft ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation_soft {
+  0% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
 }

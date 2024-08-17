@@ -16,43 +16,31 @@
 .profile {
     position: relative;
 }
-.profile_inner {
-  display: flex;
+.profile_inner { 
+  display:table;
+  width:100%;
 }
 .profile_inner img {
-    height: 70%;
-    width: 70%;
     object-fit: contain;
     position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    
+    height: 50%;
+    width: 50%;
+    top: initial;
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
 }
 
 .profile_img {
-    width: 60%;
     text-align: right;
     margin-right: 3%;
+
+    width: 100%;
+    display:table-caption;
+    text-align: center;
 }
 
-
-@media only screen and (max-width:840px) {
-   .profile_inner { 
-      display:table;
-      width:100%;
-   }
-   .profile_inner img {
-        height: 50%;
-        width: 50%;
-        top: initial;
-        -webkit-transform: initial;
-        -ms-transform: initial;
-        transform: initial;
-   }
-   .profile_img {
-        width: 100%;
-        display:table-caption;
-        text-align: center;
-    }
+img {
+    user-select: none;
 }

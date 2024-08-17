@@ -8,8 +8,7 @@ import './routes/navDisplay.css'
 import NavDir from './components/navdir'
 
 export default function ErrorPage() {
-  const error = useRouteError();
-  console.error(error);
+  let error:any = useRouteError();
 
   return (
     

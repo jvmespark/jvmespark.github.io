@@ -26,7 +26,7 @@ function Writings() {
   const [devlogs, setDevlogs] = useState(false);
   const [essays, setEssays] = useState(false);
   const [college, setCollege] = useState(false);
-  const [tag, setTag] = useState("")
+  //const [tag, setTag] = useState("")
 
   const handleToggle = (type:string) => {
     if (type == "devlogs") setDevlogs(!devlogs)
@@ -35,11 +35,11 @@ function Writings() {
     if (!devlogs && !essays && !college) {
       const filteredItems = posts.filter(item => item.tags?.includes(type));
       setFilteredPost(filteredItems);
-      setTag(type);
+      //setTag(type);
     }
     else {
       setFilteredPost(posts);
-      setTag("")
+      //setTag("")
     }
   };
 
