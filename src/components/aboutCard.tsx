@@ -13,7 +13,7 @@ function AboutCard() {
 
           <div className="exp">
             <li>{"Currently an intern at "}
-            <a href={"https://www.youtube.com/user/AMD"}>{"AMD"}</a>{" working on AI/ML accelerators and compilers"}</li>
+            <a href={"https://www.youtube.com/user/AMD"}>{"AMD"}</a>{" working on AI/ML accelerators"}</li>
             
             <li>{"I was previously with the Digital Commerce & Innovation team at "}
             <a href={"https://www.linkedin.com/feed/update/urn:li:activity:7204642495563976705/"}>{"Capital One"}</a></li>
@@ -24,7 +24,7 @@ function AboutCard() {
           
           <br></br>
           <div className="center">
-            {"Outside of being a computer nerd I'm also a sci-fi geek, indie film consumer, alternative music enthusiast, wannabe gamer, hobby artist & writer, and a professional daydreamer"}
+            {"Outside of being a computer nerd I'm also a sci-fi geek, indie film consumer, alternative music enthusiast, wannabe gamer, hobby artist & writer, and a professional procrastinator"}
           </div>
           <br></br>
 
@@ -39,8 +39,8 @@ function AboutCard() {
             <li><a href={"https://www.linkedin.com/in/jvmespark/"}>{"LinkedIn"}</a></li>
             <li><a href={"https://instagram.com/jvmespark"}>{"Instagram"}</a></li>
             <li><a href={"https://open.spotify.com/user/31wkdpjr2cnzo3yctou2tz65xfiy?si=9d7853fea20e447f"}>{"Spotify"}</a></li>
+            <li><a href={"https://jvmespark.substack.com/about"}>{"Substack"}</a></li>
             <li><a href={"https://youtube.com/"}>{"Youtube (Coming soon!)"}</a></li>
-            <li><a href={"https://substack.com/"}>{"Substack (Work in progress!)"}</a></li>
           </div>
           <br></br>
           <div className="center">
