@@ -39,7 +39,7 @@ function AboutCard() {
             <li><a href={"https://www.linkedin.com/in/jvmespark/"}>{"LinkedIn"}</a></li>
             <li><a href={"https://instagram.com/jvmespark"}>{"Instagram"}</a></li>
             <li><a href={"https://open.spotify.com/user/31wkdpjr2cnzo3yctou2tz65xfiy?si=9d7853fea20e447f"}>{"Spotify"}</a></li>
-            <li><a href={"https://jvmespark.substack.com/about"}>{"Substack"}</a></li>
+            <li><a href={"https://jvmespark.substack.com"}>{"Substack"}</a></li>
             <li><a href={"https://www.youtube.com/@cryocoda"}>{"Youtube (Coming soon!)"}</a></li>
           </div>
           <br></br>
