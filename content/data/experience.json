@@ -1,0 +1,43 @@
+[
+  {
+    "company": "Google",
+    "role": "Compiler Engineer Intern",
+    "location": "Bay Area",
+    "start": "2025-05",
+    "end": "2025-08",
+    "tags": ["compilers", "runtime-engines"]
+  },
+  {
+    "company": "AMD",
+    "role": "AI Developer Intern",
+    "location": "Bay Area",
+    "start": "2024-08",
+    "end": "2024-12",
+    "tags": ["mlir", "compilers", "ai"]
+  },
+  {
+    "company": "Capital One",
+    "role": "Intern",
+    "location": "Washington Metro Area",
+    "start": "2024-06",
+    "end": "2024-08",
+    "tags": ["cloud", "infrastructure"]
+  },
+  {
+    "company": "Open Source Developer",
+    "role": "Contributor",
+    "location": "GitHub",
+    "start": "2023-10",
+    "end": null,
+    "tags": ["open-source"],
+    "url": "https://new.rcos.io/handbook/"
+  },
+  {
+    "company": "SCOREC",
+    "role": "Researcher",
+    "location": "Remote",
+    "start": "2025-01",
+    "end": null,
+    "tags": ["hpc", "research"]
+  }
+]

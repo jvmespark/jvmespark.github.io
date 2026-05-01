@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "next build",
+  "framework": "nextjs",
+  "headers": [
+    {
+      "source": "/feed.xml",
+      "headers": [
+        { "key": "content-type", "value": "application/atom+xml; charset=utf-8" },
+        { "key": "cache-control", "value": "public, max-age=3600, s-maxage=3600" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(png|jpg|jpeg|gif|svg|webp|avif|ico|woff2)",
+      "headers": [
+        { "key": "cache-control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}

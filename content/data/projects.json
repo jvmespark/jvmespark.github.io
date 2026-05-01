@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "myotis",
+    "title": "Myotis",
+    "tagline": "a small SSA-form compiler, written from scratch.",
+    "description": "Hand-rolled compiler for a Lua-flavored language with full SSA form, dominator-based register allocation, and basic peephole optimization. Backend targets a custom register machine.",
+    "year": "2025",
+    "status": "shipped",
+    "tags": ["compilers", "ssa", "rust"],
+    "repo": "https://github.com/jvmespark/myotis2",
+    "accent": "sage"
+  },
+  {
+    "slug": "lunara",
+    "title": "Lunara",
+    "tagline": "ONNX → Triton: a lowering compiler for inference.",
+    "description": "Reads ONNX graphs, performs operator fusion and shape inference, and emits Triton kernels for common patterns. Built to learn how production deep-learning compilers actually fit together.",
+    "year": "2025",
+    "status": "building",
+    "tags": ["ml-compilers", "triton", "onnx"],
+    "repo": "https://github.com/jvmespark/lunara",
+    "accent": "peach"
+  },
+  {
+    "slug": "peanutos",
+    "title": "PeanutOS",
+    "tagline": "a teaching operating system for ARM.",
+    "description": "Tiny OS targeting QEMU's virt machine — preemptive scheduler, simple page allocator, basic VFS, and a shell. Mostly an excuse to learn linker scripts properly.",
+    "year": "2023",
+    "status": "archived",
+    "tags": ["operating-systems", "arm", "c"],
+    "repo": "https://github.com/jvmespark/peanut-os",
+    "accent": "peach"
+  }
+]

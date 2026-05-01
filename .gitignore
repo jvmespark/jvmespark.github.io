@@ -1,0 +1,39 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# production
+build/
+dist/
+
+# env
+.env*.local
+.env
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# misc
+.DS_Store
+*.pem
+.vscode/
+.idea/
+
+# generated
+public/search-index.json
+public/sitemap.xml
+public/robots.txt
+
+# typescript
+*.tsbuildinfo
+
+DEV.md

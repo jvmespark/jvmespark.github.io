@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'katex/dist/katex.min.css';
+
+/* ---------- Design tokens ---------- */
+@layer base {
+  :root {
+    /* Soft modernist palette — warm cream paper, ink that feels written-in */
+    --paper:        38 50% 95%;     /* #FBF5EC main background */
+    --paper-deep:   36 36% 91%;     /* #F0E9DC slightly recessed */
+    --paper-line:   34 18% 82%;     /* #DDD3C0 hairlines */
+
+    --ink:          30 14% 16%;     /* #2D2A26 primary text */
+    --ink-soft:     27 10% 28%;     /* #4A453F body */
+    --ink-muted:    28  8% 45%;     /* #756E66 secondary */
+    --ink-faint:    30  6% 64%;     /* #A8A39A captions */
+
+    --accent:       86 27% 56%;     /* sage 400 */
+    --accent-foreground: 30 14% 16%;
+
+    --radius: 10px;
+
+    /* selection */
+    --selection-bg: 36 80% 84%;     /* peach-ish */
+    --selection-fg: 30 30% 16%;
+  }
+
+  .dark {
+    --paper:        30 8% 8%;       /* #16140F deep warm dark */
+    --paper-deep:   30 8% 12%;
+    --paper-line:   30 6% 22%;
+
+    --ink:          38 25% 92%;     /* #F0E9DB warm white */
+    --ink-soft:     34 14% 78%;
+    --ink-muted:    30 10% 60%;
+    --ink-faint:    30  6% 44%;
+
+    --accent:       86 27% 65%;
+    --accent-foreground: 38 25% 92%;
+
+    --selection-bg: 28 30% 28%;
+    --selection-fg: 38 25% 92%;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  body {
+    background-color: hsl(var(--paper));
+    color: hsl(var(--ink-soft));
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: hsl(var(--selection-bg));
+    color: hsl(var(--selection-fg));
+  }
+
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--paper-line));
+    border-radius: 8px;
+    border: 2px solid hsl(var(--paper));
+  }
+  *::-webkit-scrollbar-thumb:hover { background: hsl(var(--ink-faint)); }
+
+  /* heading fonts — variable serif Fraunces for display */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: hsl(var(--ink));
+    font-feature-settings: 'ss01', 'liga', 'kern';
+  }
+
+  /* hairline rule */
+  hr {
+    border: 0;
+    border-top: 0.5px solid hsl(var(--paper-line));
+    margin: 2.25rem 0;
+  }
+}
+
+/* ---------- Prose tweaks ---------- */
+@layer components {
+  .prose {
+    --tw-prose-bullets: hsl(var(--ink-faint));
+    --tw-prose-counters: hsl(var(--ink-muted));
+  }
+  .prose h1 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.018em;
+    margin-top: 0;
+    margin-bottom: 0.4em;
+  }
+  .prose h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.65rem;
+    letter-spacing: -0.01em;
+    margin-top: 2.4em;
+    margin-bottom: 0.6em;
+  }
+  .prose h2::before {
+    /* small typographic marker — characterful but quiet */
+    content: '§';
+    color: hsl(var(--ink-faint));
+    font-size: 0.7em;
+    margin-right: 0.5em;
+    font-style: italic;
+  }
+  .prose h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: -0.005em;
+    margin-top: 2em;
+  }
+  .prose a {
+    text-decoration: none;
+    background-image: linear-gradient(transparent 60%, hsl(var(--accent) / 0.35) 60%);
+    background-size: 100% 100%;
+    transition: background-size 200ms ease, color 200ms ease;
+    color: hsl(var(--ink));
+    font-weight: 500;
+  }
+  .prose a:hover {
+    background-size: 100% 110%;
+  }
+  .prose blockquote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15em;
+    border-left-color: hsl(var(--accent));
+    color: hsl(var(--ink));
+  }
+  .prose blockquote p::before,
+  .prose blockquote p::after { content: ''; }
+  .prose code {
+    font-family: var(--font-mono);
+    font-size: 0.86em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: hsl(var(--paper-deep));
+    color: hsl(var(--ink));
+    font-weight: 400;
+  }
+  .prose code::before,
+  .prose code::after { content: ''; }
+  .prose pre {
+    margin: 1.6em 0;
+    padding: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: transparent;
+    border: 0.5px solid hsl(var(--paper-line));
+  }
+  .prose pre code {
+    background: transparent;
+    padding: 0;
+    font-size: 14px;
+    display: block;
+    line-height: 1.6;
+  }
+
+  /* Heading anchor links from rehype-autolink-headings */
+  .prose .heading-anchor {
+    color: inherit;
+    background: none;
+    text-decoration: none;
+    position: relative;
+  }
+  .prose .heading-anchor::before {
+    content: '#';
+    position: absolute;
+    left: -1.4ch;
+    color: hsl(var(--ink-faint));
+    opacity: 0;
+    transition: opacity 150ms ease;
+    font-family: var(--font-mono);
+    font-weight: 400;
+  }
+  .prose .heading-anchor:hover::before { opacity: 1; }
+
+  /* drop cap on first paragraph of an article */
+  .article-body > p:first-of-type::first-letter {
+    font-family: var(--font-display);
+    font-weight: 500;
+    float: left;
+    font-size: 3.4em;
+    line-height: 0.85;
+    margin: 0.05em 0.12em 0 0;
+    color: hsl(var(--ink));
+  }
+}
+
+/* ---------- Shiki / rehype-pretty-code dual-theme ---------- */
+[data-rehype-pretty-code-figure] {
+  margin: 1.6em 0;
+}
+[data-rehype-pretty-code-figure] pre {
+  padding: 1rem 0;
+  overflow-x: auto;
+  background: hsl(var(--paper-deep));
+}
+[data-rehype-pretty-code-figure] code {
+  display: grid;
+  counter-reset: line;
+  background: transparent;
+  font-size: 14px;
+}
+[data-rehype-pretty-code-figure] code [data-line] {
+  padding: 0 1.2rem;
+  border-left: 2px solid transparent;
+}
+[data-rehype-pretty-code-figure] code .line-highlighted {
+  background: hsl(var(--accent) / 0.12);
+  border-left-color: hsl(var(--accent));
+}
+[data-rehype-pretty-code-title] {
+  padding: 0.4rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: hsl(var(--ink-muted));
+  border-bottom: 0.5px solid hsl(var(--paper-line));
+  background: hsl(var(--paper-deep));
+}
+[data-rehype-pretty-code-figure] mark[data-highlighted-chars] {
+  background: hsl(var(--accent) / 0.2);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* dual-theme: only show tokens that match the active theme */
+html:not(.dark) [data-rehype-pretty-code-figure] [data-theme='dark'] { display: none; }
+html.dark        [data-rehype-pretty-code-figure] [data-theme='light'] { display: none; }
+
+html.dark [data-rehype-pretty-code-figure] pre,
+html.dark [data-rehype-pretty-code-title] {
+  background: hsl(var(--paper-deep));
+}
+
+/* ---------- KaTeX small overrides ---------- */
+.katex-display {
+  margin: 1.4em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.4em 0;
+}
+.katex { font-size: 1.05em; }
+
+/* ---------- Marginalia / sidenotes ---------- */
+.sidenote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.9em;
+  color: hsl(var(--ink-muted));
+}
+
+/* Hide unwanted artifact in printing */
+@media print {
+  nav, footer, [data-no-print] { display: none !important; }
+}
